@@ -1,0 +1,78 @@
+html, body, #map {
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-gap: 4px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 60% 40%;
+}
+
+.peta {
+  grid-column: 1/-1;
+}
+
+.gambar {
+  background: green;
+  grid-column: 1/6;
+}
+
+.review {
+  background: yellow;
+  grid-column: 6/-1;
+}
+
+html, body, #map {
+    height: 100%;
+    width: 100vw;
+}
+
+img {
+    width: 100%;
+    /* max-height: 10%; */
+    height: 100%;
+}
+
+p{
+  width: 100%;
+  /* max-height: 10%; */
+  height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 60% 40%;
+}
+.peta {
+    grid-column: 1/-1;
+}
+
+.gambar {
+    background: green;
+    grid-column: 1/6;
+}
+.review {
+    background: yellow;
+    grid-column:6/-1;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}

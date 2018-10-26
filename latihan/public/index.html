@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="main.js" type="text/javascript"> </script>
+  <title>MWS Gdev Kejar</title>
+
+  <style>
+    .container {
+      /* display: grid; */
+      /* grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 30px 100px 100px 100px 30px;
+      grid-gap: 4px; */
+
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 50px 100px 100px 100px 30px;
+      grid-gap: 4px;
+    }
+
+    .menu {
+      background: lightblue;
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .sidebar {
+      background: lightyellow;
+      grid-row-start: 2;
+      grid-row-end: 5;
+      grid-column-end: 1/2;
+    }
+
+    .konten {
+      font-size: 18px;
+      padding-left: 1em;
+      background: pink;
+      grid-column: 2/5;
+    }
+
+    .footer {
+      background: rgb(217, 211, 78);
+      grid-column: 1/5;
+      grid-row: 5/5;
+      font-size: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      border-radius: 12px;
+      background-color: #888888;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 16px;
+      padding: 12px;
+      width: 40%;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+  .button:hover{
+      box-shadow: 0 12px 30px 0 rgba(0,0,0,0.19);
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #bird{
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  #me{
+    max-width: 200px;
+    max-height: 600px;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class='menu'><img id="bird" src="Images/bird.png" alt="Icon"></div>
+    <div class='sidebar'>SideBar <br><img id="me" src="Images/me.webp" alt="me"> </img></div>
+    <div class='konten'>Menjumlahkan dua angka <br> <a href="https://evan-19f86.firebaseapp.com/Project1"><button class="button"><span style="color:white">Go Here </span></a></div>
+    <div class='konten'>Lokasi Istimewa dengan Mapbox <br> <a href="https://evan-19f86.firebaseapp.com/Project2"><button class="button"><span style="color:white">Go Here </span></a></div>
+    <div class='konten'>Gambar dan Review Kampus di Surabaya <br> <a href="https://evan-19f86.firebaseapp.com/Project3"><button class="button"><span style="color:white">Go Here </span></a> </div>
+    <div class='footer' style="font-weight:bold; text-align: center;">Evan</div>
+  </div>
+</body>
+</html>
